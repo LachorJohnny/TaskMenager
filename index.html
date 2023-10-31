@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/style.css">
-        <title>Kamień, papier, nożyce</title>
+        <meta charset="UTF-8" >
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+        >
+        <title>Menedżer Zadań</title>
+        <link rel="stylesheet" href="css/style.css" >
     </head>
     <body>
-        <div class="container">
-            <div id="buttons"></div>
-            <div id="messages"></div>
+        <div class="task-manager">
+            <h1>Menedżer Zadań</h1>
+            <div class="task-input">
+                <input type="text" id="task" placeholder="Dodaj nowe zadanie" />
+                <button id="add-task">Dodaj</button>
+            </div>
+            <ul id="task-list"></ul>
         </div>
-        <script src="js/functions.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>
