@@ -8,7 +8,7 @@ The Simple Task Manager is a web application that allows you to add, edit, mark 
 
 ## Demo
 
-If you want to see the project in action, you can visit the [Simple Task Manager - Demo](link-to-demo).
+If you want to see the project in action, you can visit the [Simple Task Manager - Demo]([link-to-demo](https://lachorjohnny.github.io/TaskMenager/)).
 
 ## Technologies
 
