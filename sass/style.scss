@@ -8,12 +8,19 @@
 
 body {
     height: 100vh;
-    font-family: Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-align: center;
+}
+
+.tasks-title {
+    text-transform: capitalize;
+    word-spacing: 2px;
+    font-weight: 700;
 }
 
 .task-manager {
     max-width: 600px;
+    min-height: 90vh;
     margin: 30px auto;
     padding: 30px;
     border: 1px solid #ccc;
@@ -35,15 +42,17 @@ body {
         padding: 10px;
         border: 2px solid #007bff;
         border-radius: 5px 0 0 5px;
+        font-size: 14px;
         outline: none;
     }
 
     button {
-        padding: 12px 15px;
+        padding: 12px 20px;
         background-color: #007bff;
         color: #fff;
         border: none;
         border-radius: 0 5px 5px 0;
+        font-size: 14px;
         transition: all 0.2s ease-in-out;
         cursor: pointer;
 
@@ -85,6 +94,7 @@ li {
     border: none;
     cursor: pointer;
     font-size: 18px;
+    font-weight: 600;
 }
 
 .delete {
@@ -93,11 +103,13 @@ li {
     border: none;
     cursor: pointer;
     font-size: 18px;
+    font-weight: 600;
 }
 
 @media (max-width: 768px) {
     .task-manager {
         margin: 10px 5px;
+        padding: 10px;
     }
 
     .task-input {

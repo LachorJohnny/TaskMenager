@@ -69,6 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    // Funkcja dodająca zadania do listy
     function addTask() {
         const taskText = taskInput.value;
         if (taskText.trim() === "") {
@@ -84,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
         saveTasks();
     }
 
+    // Funkcja generująca pojedyńcze zadania
     function createTaskItem(text, completed) {
         const taskItem = document.createElement("li");
         if (completed) {
@@ -92,8 +94,9 @@ document.addEventListener("DOMContentLoaded", function () {
         const span = document.createElement("span");
         span.textContent = text;
 
-        span.addEventListener("click", function () {
-            const newText = prompt("Edytuj treść zadania:", text);
+        // Funkcja obsługujaca edytowanie zadań
+        taskItem.addEventListener("dblclick", function () {
+            const newText = prompt("Edit task:", text);
             if (newText !== null) {
                 span.textContent = newText;
                 saveTasks();
@@ -101,18 +104,20 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         const completeButton = document.createElement("button");
-        completeButton.textContent = "Zakończ";
+        completeButton.textContent = "complete";
         completeButton.classList.add("complete");
 
+        // Funkcja ustawiająca zadanie za zakończone
         completeButton.addEventListener("click", function () {
             taskItem.classList.toggle("completed");
             saveTasks();
         });
 
         const deleteButton = document.createElement("button");
-        deleteButton.textContent = "Usuń";
+        deleteButton.textContent = "delete";
         deleteButton.classList.add("delete");
 
+        // Funkcja usuwająca zadanie
         deleteButton.addEventListener("click", function () {
             taskList.removeChild(taskItem);
             saveTasks();

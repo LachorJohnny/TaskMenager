@@ -2,22 +2,24 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" >
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
-        >
-        <title>🚀 Menedżer Zadań: Zorganizuj Swój Dzień!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+        <title>🚀 Task Manager: Organize Your Day!</title>
         <link rel="stylesheet" href="css/style.css" >
     </head>
     <body>
         <div class="task-manager">
-            <h1>Menedżer Zadań</h1>
+            <h1 class="tasks-title">Task Menager</h1>
             <div class="task-input">
-                <input type="text" id="task" placeholder="Dodaj nowe zadanie">
-                <button id="add-task" type="button">Dodaj</button>
+                <input type="text" id="task" placeholder="Add new task">
+                <button id="add-task" type="button">Add</button>
             </div>
-            <ul id="task-list"></ul>
+            <ul id="task-list">
+                <!-- space for tasks -->
+            </ul>
         </div>
-        <script src="js/script.js"></script>
+        <script src="js/app.js"></script>
     </body>
 </html>

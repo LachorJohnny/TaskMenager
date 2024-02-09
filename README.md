@@ -14,6 +14,9 @@ If you want to see the project in action, you can visit the [Simple Task Manager
 
 The project uses the following technologies:
 
--   HTML
--   CSS
--   JavaScript
+-   HTML5
+-   CSS3
+-   SCSS (Preprocessor)
+-   JavaScript (ES6)
+-   NPM 10.2.4
+-   Google Fonts (for fonts)
